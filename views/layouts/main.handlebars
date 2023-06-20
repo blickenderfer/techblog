@@ -18,15 +18,19 @@
                     <li>
                         <a href="/dashboard">Dashboard</a>
                     </li>
+                    {{#if logged_in}}
                     <li>
                         <button id="logout">Log Out</button>
                     </li>
+                    {{/if}}
+                      {{#unless logged_in}}
                     <li>
                         <a href="/login">Log In</a>
                     </li>
                     <li>
                         <a href="/signUp">Sign Up</a>
                     </li>
+                    {{/unless}}
                 </ul>
             </div> 
         </div>
