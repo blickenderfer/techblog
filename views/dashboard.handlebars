@@ -1,0 +1,49 @@
+<div>
+    <div>
+        <h2>
+            Welcome to your Dashboard, {{username}} 
+        </h2>
+    </div>
+</div>
+
+<div>
+    <div>
+        <h3>
+            Create a new blog post 
+        </h3>
+        <form class="new-blog-form">
+            <div>
+                <input type="text" id="blog-title" name="blog-title" placeholder="Post Title"/>
+            </div>
+            <div>
+                <textarea id="blog-desc" name="blog-desc" placeholder="Post Content"></textarea>
+            </div>
+            <div>
+                <button type="submit">Create Post</button>
+            </div>
+        </form>
+    </div>
+    {{#if blogs.length}}
+    <div class="blog-list">
+        <h3>
+            Current Posts
+        </h3>
+        {{#each blogs as |blog|}}
+        <div>
+            <div>
+                <h4>
+                    <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+                </h4>
+            </div>
+            <div>
+                <button data-id="{{blog.id}}">Delete</button>
+            </div>
+            <div>
+                <button class="update" data-id="{{blog.id}}">Update</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+<script src="/js/dashboard.js"></script>

@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -6,12 +7,10 @@
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
-<div>
-    <nav>
-        <div>
-            <a href="/">Tech Blog of Doom</a>
-            <div>
-                <ul>
+<div class="flex full-container">
+    <nav class="flex">     
+            <a id="title" href="/">Tech Blog of Doom</a>
+                <ul class="flex">
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -31,11 +30,9 @@
                         <a href="/signUp">Sign Up</a>
                     </li>
                     {{/unless}}
-                </ul>
-            </div> 
-        </div>
+                </ul>      
     </nav>
-    <main>
+    <main class="container">
         {{{body}}}
     </main>
 </div>

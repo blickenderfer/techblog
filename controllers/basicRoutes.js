@@ -8,13 +8,21 @@ router.get("/", async (req, res) => {
             include:[{
                 model: User,
                 attributes: ["username"]
-            }]
+            },
+            {
+                model: Comment, 
+                include: [User]
+            }
+        ]
         })
         const blogs = blogData.map(blog => blog.get({plain:true}))
         res.render("homepage", {
-            blogs
+            blogs, 
+            logged_in: req.sessions.logged_in
         })
     } catch(error){
         res.status(500).json(error)
     }
 });
+
+module.exports = router

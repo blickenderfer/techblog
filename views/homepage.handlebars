@@ -1,21 +1,24 @@
-{{#each blogs as |blog|}}
-<div>
-    <div>
-        <div>
-            <div>
+{{#each blogs as |blog|}}       
+            <div class="flex spread">
                 <h2>
                     <a href="/blog/{{blog.id}}">{{blog.title}}</a>
                 </h2>
-            </div>
-            <div>
                 <p>Created By {{blog.user.username}} On {{format_date blog.date_created}}</p>
-            </div>
-        </div>
-        <div>
+            </div>     
+        <div class="post">
             <p>{{blog.description}}</p>
         </div>
-    </div>
-</div>
-
-
+        <div class="commentBlock">
+            <h2 class="commentHeading">
+                Comments
+            </h2>
+            {{#each comments as |comment|}}
+            <div class="commentText">
+                <p>{{comment.comment_description}}</p>
+                <p>Created By {{comment.user.username}} On {{format_date comment.date_created}}</p>
+            </div>
+            <hr>
+            {{/each}}
+        </div>
+        <br>
 {{/each}}
