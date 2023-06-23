@@ -46,5 +46,5 @@ const buttonHandler = async (e) => {
 } 
 }
 
-document.querySelector("new-blog-form").addEventListener("submit", newPostHandler) //check
-document.querySelector("blog-list").addEventListener("click", buttonHandler) //check
+document.querySelector(".new-blog-form").addEventListener("submit", newPostHandler) //check
+document.querySelector(".blog-list").addEventListener("click", buttonHandler) //check

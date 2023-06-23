@@ -12,7 +12,7 @@ const updatePost = async function(e){
         headers: {"Content-Type": "application/json"}
     })
     if (response.ok) {
-        document.location.replace("dashboard")
+        document.location.replace("/dashboard")
     } else {
         console.log("response is not okay")
     }

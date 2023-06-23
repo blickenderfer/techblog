@@ -3,4 +3,4 @@ const logout = async () => {
     document.location.replace("/")
 }
 
-document.getElementById("logout").addEventListener("click", logout())
+document.getElementById("logout").addEventListener("click", logout)
