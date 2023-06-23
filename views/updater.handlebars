@@ -1,0 +1,23 @@
+<h1>
+    {{username}}
+</h1>
+<div>
+    <h3>
+        Update Post
+    </h3>
+    <form class="new-blog-form">
+        <div>
+            <input type="text" value={{title}} id="blog-title" name="blog-title"/>
+        </div>
+        <div>
+            <textarea id="blog-desc" name="blog-desc">{{description}}</textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit" data-id={{id}}>
+                Update Post
+            </button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/updater.js"></script>
