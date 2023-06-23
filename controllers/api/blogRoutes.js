@@ -38,7 +38,6 @@ router.put("/:id", withAuth, async (req, res) => {
         currentPost.title = req.body.title
         currentPost.description = req.body.description
         await currentPost.save()
-        const allPosts = await Blog.findAll()
         res.sendStatus(200)
     } catch (error) {
         res.status(500).json(error)

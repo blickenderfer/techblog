@@ -9,6 +9,7 @@
             <p>{{blog.description}}</p>
         </div>
         <div class="commentBlock">
+            {{#if comments.length}}
             <h2 class="commentHeading">
                 Comments
             </h2>
@@ -19,6 +20,7 @@
             </div>
             <hr>
             {{/each}}
+            {{/if}}
         </div>
         <br>
 {{/each}}
