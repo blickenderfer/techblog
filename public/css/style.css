@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:"akshar", sans-serif;
 }
 
 html {
@@ -56,15 +56,19 @@ nav {
 .container {
     padding: 1em;
     margin: 0 2em 0 2em;
+    width: 90vw;
 }
 
 .post {
     text-align: center;
     padding: 1em;
+    width: 90vw;
 }
 
 .commentBlock {
     text-align: center;
+    width: 65vw;
+    margin: 0 auto;
 }
 
 .commentHeading {
@@ -72,4 +76,69 @@ nav {
 
 .commentText {
     margin: 0.5em 0;
+}
+
+/*dashboard styles*/
+
+#welcome {
+    text-align: center;
+    font-size: 3em;
+}
+
+.dash {
+    justify-content: space-around;
+}
+
+#blog-title, #blog-desc {
+    display: block;
+}
+
+#postList, #postForm {
+   font-size: 2em; 
+}
+
+/*login and signup*/
+
+.form-input {
+    display: block;
+}
+
+/*blogpost page*/
+
+.new-comment-form {
+    background: black;
+    display:flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.new-comment-form textarea {
+    text-align: center;
+    font-size: 2em;
+}
+
+.new-comment-form button {
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 15%;
+}
+
+#blog-title {
+    font-size: 1.25em;
+    width: 100%;
+}
+
+#blog-desc {
+    font-size: 1.25em;
+    width: 100%;
+    height: 200px;
+}
+
+#createPost {
+    width: 100%;
+    height: 2em;
+    font-size: 1.5rem;
+    background: black;
+    color: red;
 }
