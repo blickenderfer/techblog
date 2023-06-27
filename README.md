@@ -12,5 +12,5 @@ A visitor to this site can read blog posts on the homepage of the application. I
 This application utilizes Sequelize, Express.js, Node.js, the Handlebars framework and is written in Javascript and CSS.
 
 ## Heroku Deployment
-
+https://blogofdoom-3134a54443ce.herokuapp.com/
 
