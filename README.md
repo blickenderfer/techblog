@@ -1,6 +1,6 @@
 # Blog
 
-![siteImage](/techblog/image/blog.PNG)
+![siteImage](/image/blog.PNG)
 
 ## Overview
 This application is a blog where users can write text posts and comment on other user's posts. 
