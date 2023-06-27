@@ -39,6 +39,7 @@ nav {
     width: 100vw;
     margin-bottom: 2em;
     padding: 1em;
+    background-color:  rgb(227,244,97);
 }
 
 #title {
@@ -140,5 +141,5 @@ nav {
     height: 2em;
     font-size: 1.5rem;
     background: black;
-    color: red;
+    color:rgb(227,244,97)
 }
